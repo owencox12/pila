@@ -1,0 +1,378 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 900px;
+    }
+    .questions__wrapper {
+        flex-wrap: wrap;
+    }
+    .questions__item {
+        width: 100%;
+    }
+    .questions__block {
+        min-height: 350px;
+        width: 100%;
+    }
+    .questions__item_button {
+        text-align: center;
+        padding-top: 0;
+        margin-top: 50px;
+        padding-right: 0;
+        button {
+            margin: 0 auto;
+        }
+    }
+    .questions__item {
+        text-align: center;
+        &_title {
+            padding-left: 0;
+        }
+        &_subtitle {
+            margin: 0 auto;
+            padding-left: 0;
+        }
+    }
+    .buy__wrapper {
+        flex-wrap: wrap;
+        // align-items: center;
+    }
+    .buy__item {
+        width: 100%;
+        margin-bottom: 300px;
+        text-align: center;
+        &_block {
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            &_image {
+                margin-right: 50px;
+            }
+        }
+    }
+    .buy__item_block_text_title {
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    .buy__item_block_image {
+        display: block;
+        margin: 0 auto;
+    }
+    .about {
+        min-height: 2500px;
+    }
+    .questions {
+        padding-top: 130px;
+    }
+    .main__item_left {
+        display: none;
+    }
+    .overlay__menu {
+        margin-top: 200px;
+    }
+    .main__item_right {
+        display: none;
+    }
+    .buy__item_block_text_descr {
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+    .main__item_image {
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    .swiper-pagination {
+        left: 0 !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .container {
+        max-width: 700px;
+    }
+    .about__wrapper {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .main__item_title {
+        width: 350px;
+    }
+    .main__item_subtitle  {
+        width: 370px;
+    }
+    .main__item_descr  {
+        width: 300px;
+    }
+    .about__item_descr  {
+        text-align: center;
+    }
+    .about__item_title {
+        text-align: center;
+    }
+    .button--about {
+        display: block;
+        margin: 0 auto;
+    }
+    .footer__wrapper {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .footer__menu {
+        margin-top: 50px;
+    }
+    .footer__logo {
+        text-align: center;
+    }
+    .header__menu {
+        display: none;
+    }
+    .header__burger {
+        width: 50px;
+        height: 20px;
+        display: block;
+        position: relative;
+        z-index: 1000;
+        top: 2%;
+        left: 0;
+        &_active {
+            span {
+                display: none;
+            }
+            &::before {
+                transform: rotate(-45deg);
+                bottom: 9%;
+            }
+            &::after {
+                transform: rotate(45deg);
+                top: 9%;
+            }
+        }
+        span {
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            left: 0;
+            top: 9px;
+            left: 0;
+            transition: all .3s;
+            background: #000;
+        }
+        &::before {
+            content: '';
+            width: 100%;
+            height: 4px;
+            left: 0;
+            top: 0;
+            transition: all .3s;
+            position: absolute;
+            background: #000;
+        }
+        &::after {
+            content: '';
+            width: 100%;
+            height: 4px;
+            bottom: -16%;
+            left: 0;
+            transition: all .3s;
+            position: absolute;
+            background: #000;
+        }
+    }
+    .header__burger_list {
+        position: fixed;
+        width: 50%;
+        height: 100%;
+        left: -100%;
+        top: 0;
+        background: #000;
+        z-index: 2000;
+        transition: all .3s;
+        display: block;
+        &_active {
+            left: 0;
+            transition: all .3s;
+        }
+        ul {
+            padding-top: 50px;
+            padding-left: 30px;
+            li {
+                margin: 15px 0;
+                select {
+                    background: #147E45;
+                    box-shadow: 0px 4px 20px rgba(13, 77, 42, 0.33);
+                    border: none;
+                    font-family: 'Rubik';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #FFFFFF;
+                    option {
+                        font-family: 'Rubik';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: #FFFFFF;
+                    }
+                }
+                a {
+                    font-family: 'Rubik';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 25px;
+                    line-height: 19px;
+                    color: #ffff;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 500px;
+    }
+    .main__wrapper {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    .main__item {
+        width: 100%;
+        &:nth-child(1) {
+            margin-top: 80px;
+        }
+    }
+    .overlay {
+        &__menu {
+            width: 400px;
+            height: 450px;
+        }
+    }
+    .overlay__close {
+        right: -15%;
+    }
+    .overlay__title {
+        font-size: 24px;
+        padding-top: 80px;
+    }
+
+    .swiper-pagination {
+        top: 100%;
+    }
+    // .main__item_title  {
+    //     text-align: center;
+    //     margin: 0 auto;
+    // }
+    // .main__item_subtitle {
+    //     text-align: center;
+    //     margin: 0 auto;
+    //     margin-top: 15px;
+    // }
+    // .main__item_descr {
+    //     text-align: center;
+    //     margin: 0 auto;
+    //     margin-top: 15px;
+    // }
+    // .main__item_list {
+    //     &_ul {
+    //         li {
+    //             text-align: center;
+    //         }
+    //     }
+    // }
+    .about__item_descr  {
+        width: 400px;
+    }
+    .header__burger_list {
+        width: 70%;
+    }
+    .footer__menu_list_ul_li {
+        a {
+            font-size: 17px;
+        }
+    }
+    .footer__text {
+        text-align: center;
+    }
+}
+
+@media (max-width: 571px) {
+    .container {
+        max-width: 300px;
+    }
+    .header__logo {
+        img {
+            width: 200px;
+        }
+    }
+    .overlay__menu {
+        width: 300px;
+    }
+    .overlay__form_input {
+        width: 200px;
+    }
+    .button--overlay {
+        width: 240px;
+    }
+    .overlay__title {
+        font-size: 20px;
+    }
+    .header__burger_list {
+        width: 60%;
+        ul {
+            padding-left: 20px;
+            li {
+                margin: 30px 0;
+                a {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+    .about__item_image {
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    .about__item_title {
+        text-align: left;
+    }
+    .about__item_descr {
+        text-align: left;
+    }
+    .button--about {
+        margin-left: 0;
+    }
+    .questions__item_subtitle {
+        width: 200px;
+        margin-top: 15px;
+    }
+    .button--questions {
+        width: 200px;
+    }
+    .questions__block {
+        min-height: 400px;
+    }
+    .footer__wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer__menu {
+        flex-wrap: wrap;
+    }
+    .footer__menu_list:last-child {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    .about__item_title  {
+        width: 250px;
+    }
+    .about__item_descr {
+        width: 250px;
+    }
+}

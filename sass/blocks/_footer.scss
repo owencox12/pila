@@ -1,0 +1,78 @@
+.footer {
+    min-height: 375px;
+    padding-bottom: 40px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 136px;
+    }
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        &_list {
+            margin: 0 20.5px;
+            &:last-child {
+                margin-right: 0;
+            }
+            &:first-child {
+                margin-left: 0;
+            }
+            &_ul {
+                &_li {
+                    margin: 15.5px 0;
+                    &:first-child {
+                        margin-top: 0;
+                    }
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    &_second {
+                        margin: 13.5px 0;
+                        &:first-child {
+                            margin-top: 0;
+                        }
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                        a {
+                            font-family: 'Rubik';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 19px;
+                            color: #4F5665;
+                            text-decoration: none;
+                        }
+                        &_active {
+                            a {
+                                font-family: 'Rubik';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 15px;
+                                color: #147E45;
+                            }
+                        }
+                    }
+                    a {
+                        font-family: 'Rubik';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18px;
+                        color: #0B132A;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+    &__text {
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        color: #AFB5C0;
+        margin-top: 141px;
+    }
+}

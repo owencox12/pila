@@ -1,0 +1,22 @@
+* {
+    font-family: 'Rubik', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+body.lock {
+    overflow: hidden
+}
+
+@import 'blocks/header';
+@import 'blocks/main';
+@import 'blocks/button';
+@import 'blocks/about';
+@import 'blocks/buy';
+@import 'blocks/questions';
+@import 'blocks/footer';
+@import 'blocks/overlay';
+@import 'blocks/media';

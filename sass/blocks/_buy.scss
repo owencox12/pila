@@ -1,0 +1,59 @@
+.buy {
+    padding-top: 121px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 127px;
+    }
+    &__title {
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 41px;
+        color: #0B132A;
+    }
+    &__item {
+        width: 45%;
+        height: 284px;
+        &_block {
+            display: flex;
+            justify-content: space-between;
+            &_text {
+                display: flex;
+                flex-direction: column;
+                &_title {
+                    font-family: 'Rubik';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 19px;
+                    line-height: 23px;
+                    width: 183px;
+                    color: #0B132A;
+                    &_second {
+                        width: 300px;
+                    }
+                }
+                &_descr {
+                    font-family: 'Rubik';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 17px;
+                    line-height: 25px;
+                    width: 229px;
+                    color: #4F5665;
+                    margin-top: 12px;
+                    &_second {
+                        width: 300px;
+                    }
+                }
+                &_button {
+                    margin-top: 45px;
+                    &_second {
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
